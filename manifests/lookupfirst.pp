@@ -1,6 +1,6 @@
-class lookupparam {
+class lookupparam::lookupfirst {
 
-  #$notusedlookup = lookup('lookupparam::notusedlookup',String,'first',foobar)
+  $notusedlookup = lookup('lookupparam::notusedlookup',String,'first',foobar)
 
   $notusedhiera = hiera('lookupparam::notusedhiera',foobar)
 

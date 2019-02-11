@@ -1,5 +1,5 @@
 require 'spec_helper'
-describe 'lookupparam', type: 'class' do
+describe 'lookupparam::hierafirst', type: 'class' do
   on_supported_os.each do |os, facts|
     context "on #{os}" do
       let(:hiera_config) { 'spec/hiera.yaml' }
@@ -8,8 +8,9 @@ describe 'lookupparam', type: 'class' do
       end
 
       context 'with defaults for all parameters' do
-        it { is_expected.to contain_class('lookupparam') }
-        it { is_expected.to contain_class('lookupparam').with_testparam(['gamma','beta']) }
+        it { is_expected.to contain_class('lookupparam::hierafirst') }
+        it { is_expected.to contain_notify('beta') }
+        it { is_expected.to contain_notify('gamma') }
       end
     end
   end

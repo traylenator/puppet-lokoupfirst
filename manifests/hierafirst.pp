@@ -1,8 +1,9 @@
-class lookupparam {
+class lookupparam::hierafirst {
 
-  #$notusedlookup = lookup('lookupparam::notusedlookup',String,'first',foobar)
 
   $notusedhiera = hiera('lookupparam::notusedhiera',foobar)
+
+  $notusedlookup = lookup('lookupparam::notusedlookup',String,'first',foobar)
 
   $testparam = lookup('lookupparam::testparam')
 
