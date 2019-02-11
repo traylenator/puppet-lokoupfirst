@@ -1,0 +1,31 @@
+{
+  "project_page": "http://github.com/voxpupuli/puppet-fetchcrl",
+  "license": "Apache-2.0",
+  "source": "https://github.com/voxpupuli/puppet-fetchcrl",
+  "issues": "https://github.com/voxpupuli/puppet-fetchcrl/issues",
+  "description": "Install and configure fetch-crl",
+  "version": "3.0.0",
+  "summary": "Intalls and configure fetch-crl",
+  "name": "puppet-lookupparam",
+  "author": "Vox Pupuli",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 4.13.1 < 6.0.0"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.10.0 < 7.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ]
+}

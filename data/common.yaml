@@ -1,0 +1,9 @@
+---
+
+lookup_options:
+  lookupparam::testparam:
+    merge: unique
+
+lookupparam::testparam:
+  - beta
+
